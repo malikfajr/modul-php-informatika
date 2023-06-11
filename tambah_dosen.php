@@ -24,15 +24,19 @@ include_once './koneksi.php';
       <form action="tambah_dosen_action.php" method="post">
         <div class="mb-3">
           <label for="nik" class="form-label">NIK Dosen</label>
-          <input type="text" class="form-control" id="nik" required>
+          <input type="text" class="form-control" id="nik" name="nik" required>
         </div>
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Dosen</label>
-          <input type="text" class="form-control" id="nama" required>
+          <input type="text" class="form-control" name="nama" id="nama" required>
         </div>
         <div class="mb-3">
           <label for="alamat" class="form-label">Alamat Dosen</label>
           <textarea name="alamat" id="alamat" rows="4" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary float-end mx-3">Tambah</button>
+          <a href="daftar_dosen.php" class="btn btn-danger float-end mx-3">Cancel</a>
         </div>
       </form>
     </div>
