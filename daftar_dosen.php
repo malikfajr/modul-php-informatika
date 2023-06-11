@@ -53,7 +53,7 @@ include_once './koneksi.php';
               <td><?= $row['alamat_dosen'] ?></td>
               <td width="150">
                 <div class="btn-group d-flex justify-content-around gap-2">
-                  <a href="#" class="btn btn-secondary btn-sm">Edit</a>
+                  <a href="edit_dosen.php?nik=<?= $row['nik'] ?>" class="btn btn-secondary btn-sm">Edit</a>
                   <a href="hapus_dosen.php?nik=<?= $row['nik'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah anda yakin menghapus data?')">Delete</a>
                 </div>
               </td>
