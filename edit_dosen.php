@@ -29,11 +29,11 @@ if (! $row = mysqli_fetch_assoc($exec)) {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Tambah Data Dosen</title>
+    <title>Edit Data Dosen</title>
   </head>
   <body>
     <div class="container py-2">
-      <h1 class="mb-3">Tambah Data Dosen</h1>
+      <h1 class="mb-3">Edit Data Dosen</h1>
 
       <form action="edit_dosen_action.php" method="post">
         <input type="hidden" name="nik" value="<?= $row['nik'] ?>">
@@ -50,7 +50,7 @@ if (! $row = mysqli_fetch_assoc($exec)) {
           <textarea name="alamat" id="alamat" rows="4" class="form-control" required><?=  $row['alamat_dosen'] ?></textarea>
         </div>
         <div class="mb-3">
-          <button type="submit" class="btn btn-primary float-end mx-3">Tambah</button>
+          <button type="submit" class="btn btn-primary float-end mx-3">Edit</button>
           <a href="daftar_dosen.php" class="btn btn-danger float-end mx-3">Cancel</a>
         </div>
       </form>
