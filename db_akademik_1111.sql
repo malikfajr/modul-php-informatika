@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 11, 2023 at 01:31 PM
+-- Generation Time: Jul 12, 2023 at 01:40 PM
 -- Server version: 8.0.30
 -- PHP Version: 7.4.33
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `dosen` (
   `nik` char(15) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'Nomor Induk Karyawan',
+  `password` varchar(60) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `nama_dosen` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Nama Dosen',
   `alamat_dosen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'Alamat Dosen'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -37,12 +38,12 @@ CREATE TABLE `dosen` (
 -- Dumping data for table `dosen`
 --
 
-INSERT INTO `dosen` (`nik`, `nama_dosen`, `alamat_dosen`) VALUES
-('1903001', 'Muhammad Rudyanto Arief', 'Perum Merapi View 20'),
-('1903002', 'Muhammad Rifat Arief', 'Ploso Kuning 31'),
-('1903003', 'Ruth Damayanthie Arief', 'Jl. Kaliurang 95'),
-('1903004', 'Neneng Sundarsih', 'Perum Timoho Asri 22'),
-('1903005', 'Rahayana', 'Jl. Kaliurang 92');
+INSERT INTO `dosen` (`nik`, `password`, `nama_dosen`, `alamat_dosen`) VALUES
+('1903001', '12345678', 'Muhammad Rudyanto Arief', 'Perum Merapi View 20 update'),
+('1903002', '12345678', 'Muhammad Rifat Arief', 'Ploso Kuning 31'),
+('1903003', '12345678', 'Ruth Damayanthie Arief', 'Jl. Kaliurang 95'),
+('1903004', '12345678', 'Neneng Sundarsih', 'Perum Timoho Asri 22'),
+('1903005', '12345678', 'Rahayana', 'Jl. Kaliurang 92');
 
 -- --------------------------------------------------------
 
